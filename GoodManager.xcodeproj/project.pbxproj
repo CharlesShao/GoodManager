@@ -130,6 +130,7 @@
 		18C7781E222E74C0006550BC /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7781D222E74C0006550BC /* Pay.swift */; };
 		5645E03722213786002C8A44 /* NIMKitEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5645E03622213786002C8A44 /* NIMKitEmoticon.bundle */; };
 		5645E03922213794002C8A44 /* NIMKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5645E03822213794002C8A44 /* NIMKitResource.bundle */; };
+		5656C24822413836006592FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5656C24422413836006592FC /* Reachability.m */; };
 		5697F418221EB957000AC814 /* Jpush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697F417221EB957000AC814 /* Jpush.swift */; };
 		59AD2954AF493339E3EAF1C7 /* Pods_GoodManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18D82D30AB22ADD310528D4 /* Pods_GoodManager.framework */; };
 		6B58D2BA221EA124004D6D91 /* Nim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B58D2B9221EA124004D6D91 /* Nim.swift */; };
@@ -322,6 +323,10 @@
 		51ABA4DA779708FE9BC0F16A /* Pods-GoodManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodManager/Pods-GoodManager.debug.xcconfig"; sourceTree = "<group>"; };
 		5645E03622213786002C8A44 /* NIMKitEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NIMKitEmoticon.bundle; path = Pods/NIMKit/NIMKit/Resources/NIMKitEmoticon.bundle; sourceTree = SOURCE_ROOT; };
 		5645E03822213794002C8A44 /* NIMKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NIMKitResource.bundle; path = Pods/NIMKit/NIMKit/Resources/NIMKitResource.bundle; sourceTree = SOURCE_ROOT; };
+		5656C24422413836006592FC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5656C24522413836006592FC /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		5656C24622413836006592FC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5656C24722413836006592FC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5697F417221EB957000AC814 /* Jpush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jpush.swift; sourceTree = "<group>"; };
 		6B264AE2221E8A1B00781576 /* DemoProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B58D2B9221EA124004D6D91 /* Nim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nim.swift; sourceTree = "<group>"; };
@@ -398,6 +403,7 @@
 			children = (
 				0A2AE35A21FC817D0000BC35 /* GoodManager.entitlements */,
 				6B264AE2221E8A1B00781576 /* DemoProject-Bridging-Header.h */,
+				5656C24322413836006592FC /* Reachability */,
 				5645E03822213794002C8A44 /* NIMKitResource.bundle */,
 				5645E03622213786002C8A44 /* NIMKitEmoticon.bundle */,
 				18A3512A2222A87F00C62779 /* JYBD_IDCardRecognition */,
@@ -810,6 +816,17 @@
 			path = FileList;
 			sourceTree = "<group>";
 		};
+		5656C24322413836006592FC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5656C24422413836006592FC /* Reachability.m */,
+				5656C24522413836006592FC /* LICENCE.txt */,
+				5656C24622413836006592FC /* README.md */,
+				5656C24722413836006592FC /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		6C1248B6F0F6E73EEFDCD2C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1045,7 +1062,9 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GoodManager/Pods-GoodManager-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CLImagePickerTool/CLImagePickerTool.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLPhotoBrowser/LLPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/M80AttributedLabel/M80AttributedLabel.framework",
@@ -1063,6 +1082,8 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
@@ -1076,7 +1097,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImagePickerTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M80AttributedLabel.framework",
@@ -1094,6 +1117,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
@@ -1137,6 +1162,7 @@
 			files = (
 				18A351692222A88000C62779 /* JYBDScanCardManageBase.m in Sources */,
 				1814CD3F2223B6DC00AF66D1 /* FileListTableViewController.swift in Sources */,
+				5656C24822413836006592FC /* Reachability.m in Sources */,
 				18A351682222A88000C62779 /* JYBDBankCardSearch.m in Sources */,
 				0AFB04CF21E0D4EF0032C670 /* Window.swift in Sources */,
 				5697F418221EB957000AC814 /* Jpush.swift in Sources */,
