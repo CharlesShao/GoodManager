@@ -184,5 +184,4 @@ extension CLImagePickerAnotherViewController: UICollectionViewDelegate,UICollect
 
         return CGSize(width: W, height: 230)
     }
-
 }
